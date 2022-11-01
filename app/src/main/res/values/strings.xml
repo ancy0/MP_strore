@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Task_20213024</string>
+    <string name="userDataBtn">회원 정보</string>
+    <string name="termsDetail">앱 사용을 위해 위에 입력된 개인정보를 수집합니다. 수집한 정보는 본인확인 이외의 목적으로는 사용하지 않습니다. 개인정보 수집 및 이용에 대한 거부를 할 수 있으며, 이 경우 회원가입이 어려울 수 있습니다.</string>
+</resources>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="계정 생성하기"
+        android:textSize="30dp"
+        android:fontFamily="@font/cafe24ssurround"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="ID"
+        android:textSize="20dp"
+        android:fontFamily="@font/cafe24ssurround"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_weight="8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:hint="이메일을 입력해주세요."
+            android:fontFamily="@font/cafe24ssurround"/>
+
+        <Button
+            android:id="@+id/btnCheckId"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="중복검사"
+            android:textSize="17dp"
+            android:fontFamily="@font/cafe24ssurround"
+            android:backgroundTint="#2f4f4f"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="비밀번호"
+        android:textSize="20dp"
+        android:fontFamily="@font/cafe24ssurround"/>
+
+
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+            android:hint="영어,문자만 사용하여 6~15문자"
+            android:fontFamily="@font/cafe24ssurround"/>
+
+
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="이름"
+        android:textSize="20dp"
+        android:fontFamily="@font/cafe24ssurround"/>
+
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+            android:hint="이름을 입력해주세요."
+            android:fontFamily="@font/cafe24ssurround"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="전화번호"
+        android:textSize="20dp"
+        android:fontFamily="@font/cafe24ssurround"/>
+
+        <EditText
+            android:id="@+id/pNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:textSize="20dp"
+            android:hint="전화번호를 입력해주세요"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/cafe24ssurround"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="주소"
+        android:textSize="20dp"
+        android:fontFamily="@font/cafe24ssurround"/>
+
+        <EditText
+            android:id="@+id/adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center|top"
+            android:textSize="20dp"
+            android:hint="주소를 입력해주세요."
+            android:fontFamily="@font/cafe24ssurround"/>
+
+
+        <TextView
+            android:id="@+id/textTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:text="개인정보 사용 동의 간략 약관"
+            android:fontFamily="@font/cafe24ssurround"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textTermsDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="7dp"
+            android:text="@string/termsDetail"
+            android:background="@drawable/border"
+            android:textSize="12dp" />
+
+
+        <RadioGroup
+            android:id="@+id/terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+
+            <RadioButton
+                android:id="@+id/disagree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="80dp"
+                android:text="비동의"
+                android:textSize="20dp"
+                android:fontFamily="@font/cafe24ssurround"/>
+
+            <RadioButton
+                android:id="@+id/accept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="동의"
+                android:textSize="20dp"
+                android:fontFamily="@font/cafe24ssurround"/>
+        </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnJoinSuccess"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="회원가입 완료"
+        android:fontFamily="@font/cafe24ssurround"
+        android:textSize="28dp"
+        android:backgroundTint="#2f4f4f"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
+</ScrollView>

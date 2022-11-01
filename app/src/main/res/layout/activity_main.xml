@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="89dp"
+            android:layout_marginBottom="70dp"
+            android:text="씨앗상점"
+            android:fontFamily="@font/cafe24ssurround"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+
+
+        <EditText
+            android:id="@+id/loginId"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:hint="아이디"
+            android:fontFamily="@font/cafe24ssurround"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/loginPwd"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="167dp"
+            android:ems="10"
+            android:hint="비밀번호"
+            android:fontFamily="@font/cafe24ssurround"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="149dp"
+            android:layout_height="63dp"
+            android:layout_below="@+id/loginPwd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:text="로그인"
+            android:fontFamily="@font/cafe24ssurround"
+            android:textSize="20dp"
+            android:backgroundTint="#2f4f4f"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnJoinActivity"
+            android:layout_width="153dp"
+            android:layout_height="63dp"
+            android:layout_below="@+id/loginBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="회원가입"
+            android:fontFamily="@font/cafe24ssurround"
+            android:textSize="20dp"
+            android:backgroundTint="#2f4f4f"
+            android:textColor="@color/white"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/btnJoinActivity"
+            android:background="?android:attr/listDivider"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/textEnter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:layout_centerHorizontal="true"
+            android:text="계정 없이 상점을 구경하고 싶다면!"
+            android:fontFamily="@font/cafe24ssurround"/>
+
+        <Button
+            android:id="@+id/btnViewItemActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textEnter"
+            android:layout_centerHorizontal="true"
+            android:text="Main"
+            android:textColor="@color/white"
+            android:fontFamily="@font/cafe24ssurround"
+            android:backgroundTint="#2f4f4f"/>
+
+
+</RelativeLayout>
